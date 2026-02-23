@@ -1,0 +1,57 @@
+:root {
+    --bg: #779be7;
+    --bg2: #49b6ff;
+
+    --color1: #a480cf;
+    --color2: #d264b6;
+    --accent: #ff499e;
+    --white: #fff;
+    --black: #000;
+
+    --text: #1b1b3a;
+    --border: #f26a8d;
+
+    --focus: #600047;
+}
+
+*{
+    box-sizing: border-box; /* tudo vai ter o tamanho da borda, não ultrapassando*/
+}
+
+body {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "width" 100;
+
+    margin: 0px;
+    color: var(--text);
+    background: var(--bg);
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Gravitas One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a:focus-visible,
+button:focus-visible{
+    outline: 3px solid var(--focus);
+    outline-offset: 3px;
+    border-radius: 10px;
+}
+
+.container{
+    width: min(1100px, 90%);
+    margin: 0 auto;
+}
