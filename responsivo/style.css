@@ -1,0 +1,31 @@
+:root{
+    --fundo: #ffeaf4;
+}
+
+section{
+    width: 100vw; /* 100% da janela do user*/
+}
+
+.litteBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: var(--fundo);
+    width: 80%;
+    min-height: 20vh; /* 20% da visualização da tela do user*/
+    padding: 2rem; /* rem = 16px*/
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media(max-width: 600px){
+    .litteBox{
+        background-color: #bd3376;
+        padding: 1rem;
+    }
+}
