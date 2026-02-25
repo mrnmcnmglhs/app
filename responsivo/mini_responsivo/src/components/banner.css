@@ -1,0 +1,74 @@
+.topinho{
+    background-color: #fff1e6;
+    border-radius: 1rem;
+    box-shadow: var(--shadow);
+    padding: 0.9rem;
+    margin-top: 20px;
+
+    display: grid;
+    gap: 1rem;
+}
+
+.topinho-conteudo h1{
+    margin: 0;
+    font-size: 2.5rem;
+    line-height: 1.08;
+}
+
+.topinho-conteudo p{
+    margin: 14px 0;
+    font-size: 1.2rem;
+    color: var(--text);
+}
+
+.topinho-botoes{
+    margin-top: 0.6rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7;
+}
+
+.topinho-card{
+    display: grid;
+    place-items: center;
+}
+
+.top-cardzinho{
+    width: 100%;
+    background: #dfe7fd;
+    border: 1px solid #345194;
+    border-radius: 14px;
+    padding: 1.1rem;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.cardzinho-img{
+    width: 40%;
+}
+
+/* media - tablet*/
+@media(min-width: 760px){
+    .topinho{
+        background-color: #0077b6;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 1.2rem;
+    }
+}
+
+/* monitor */
+@media(min-width: 1440px){
+    .topinho{
+        padding: 1.6rem;
+        gap: 1.2rem;
+    }
+
+    .topinho-card{
+        max-width: 60ch;
+    }
+
+    .cardzinho-img{
+        width: 60%;
+    }
+}

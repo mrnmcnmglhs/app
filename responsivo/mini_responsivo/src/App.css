@@ -1,17 +1,22 @@
 :root {
     --bg: #779be7;
     --bg2: #49b6ff;
+    --bg3: #d9ceff;
 
     --color1: #a480cf;
     --color2: #d264b6;
+    --color3: #8b2873;
     --accent: #ff499e;
     --white: #fff;
     --black: #000;
 
     --text: #1b1b3a;
-    --border: #f26a8d;
+    --border: #956af2;
 
     --focus: #600047;
+
+    --shadow: 0 10px 30px #c395ff82;
+    --shadow2: 0 3px 10px #00000082;
 }
 
 *{
@@ -27,7 +32,8 @@ body {
 
     margin: 0px;
     color: var(--text);
-    background: var(--bg);
+    background-image: url(https://i.pinimg.com/originals/aa/b1/d2/aab1d25c667e0c7519e872a7d814dbe9.gif);
+    background-position: center;
 }
 
 h1,
@@ -54,4 +60,18 @@ button:focus-visible{
 .container{
     width: min(1100px, 90%);
     margin: 0 auto;
+}
+
+@media (min-width: 768px){
+    body{
+        background-image: url(https://i.pinimg.com/originals/3f/aa/0e/3faa0e64e937b17b495efcd9bd4ec333.gif);
+        background-position: center;
+    }
+}
+
+@media (min-width: 1440px){
+    body{
+        background-image: url(https://i.pinimg.com/originals/1f/b2/cf/1fb2cf90ffe5dfbc28e4335b183d8568.gif);
+        background-position: center;
+    }
 }

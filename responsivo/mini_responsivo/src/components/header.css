@@ -71,3 +71,34 @@
     pointer-events: auto;
     transform: translateY(0);
 }
+
+.nav a{
+    color: var(--text);
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav a:hover{
+    background-color: var(--color2);
+    color: var(--white);
+    border-radius: 18px;
+}
+
+@media(min-width: 1024px){
+    .sanduiche{
+        display: none;
+    }
+
+    .nav{
+        position: static;
+        display: flex;
+        gap: 1rem;
+        padding: 0;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: none;
+        background: transparent;
+        border: 0;
+    }
+}
